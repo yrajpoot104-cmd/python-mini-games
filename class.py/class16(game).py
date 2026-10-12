@@ -1,4 +1,4 @@
-#Rock Paper game
+#Rock Paper scissors game
 
 import random
 
@@ -46,3 +46,23 @@ while True:
 
     else:
         print("are you idiot choose between 1-3")
+
+
+
+#number guessing game(1-100)
+
+import random
+num = random.randint(1,100)
+count = 1
+
+while True:
+    guess = int(input("guess your number between 1-100 "))
+    if guess == num:
+        print(f"congratulation you won in {count} times")
+        break
+
+    elif guess > num:
+        print("go a bit lower")
+
+    else:
+        print("go a bit higher")
